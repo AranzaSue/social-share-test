@@ -2,37 +2,169 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>AI Forum 2026 — Experience the Future</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compartir | AI Forum 2026</title>
     
     <meta property="og:title" content="✨ AI Forum 2026 | Impulsando la Próxima Era Tecnológica">
-    <meta property="og:description" content="Líderes, innovación y el futuro de la IA en un solo lugar. ¡Fue una experiencia transformadora! Mira los highlights y únete a la conversación. #AIForum2026 #Innovation #IBMTech">
+    <meta property="og:description" content="Líderes, innovación y el futuro de la IA en un solo lugar. #AIForum2026 #Innovation #IBMTech">
     <meta property="og:image" content="https://front-aiforum.26t9w5z134g6.us-south.codeengine.appdomain.cloud/ai-forum-horizontal.jpeg">
     <meta property="og:url" content="https://aranzasue.github.io/social-share-test/">
     <meta property="og:type" content="website">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="627">
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
-        body { background: #000; color: #fff; font-family: 'IBM Plex Sans', sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
-        .hero { text-align: center; border: 1px solid #333; padding: 3rem; border-radius: 2px; background: linear-gradient(145deg, #161616, #000); max-width: 600px; }
-        .gradient-text { background: linear-gradient(90deg, #be95ff, #0f62fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; font-size: 1.2rem; }
-        h1 { font-size: 2.5rem; letter-spacing: -1px; margin: 1rem 0; }
-        img { width: 100%; filter: grayscale(20%) contrast(110%); margin: 20px 0; border: 0.5px solid #444; }
-        .loader { width: 20px; height: 20px; border: 2px solid #333; border-top: 2px solid #0f62fe; border-radius: 50%; display: inline-block; animation: spin 1s linear infinite; }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        :root {
+            --ibm-blue: #0f62fe;
+            --ibm-purple: #8a3ffc;
+            --bg-dark: #161616;
+            --layer-01: #262626;
+            --text-01: #f4f4f4;
+            --text-02: #c6c6c6;
+        }
+
+        body { 
+            background: var(--bg-dark); 
+            color: var(--text-01); 
+            font-family: 'IBM Plex Sans', sans-serif; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            overflow: hidden;
+        }
+
+        .container { 
+            text-align: center; 
+            padding: 2.5rem; 
+            background: var(--layer-01); 
+            border-top: 4px solid var(--ibm-blue);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            max-width: 450px; 
+            width: 90%;
+        }
+
+        .eyebrow { 
+            font-size: 0.75rem; 
+            letter-spacing: 2px; 
+            color: var(--ibm-purple); 
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        h1 { font-size: 1.75rem; font-weight: 300; margin: 0 0 1.5rem 0; letter-spacing: 1px; }
+
+        .preview-card {
+            background: #000;
+            border: 1px solid #393939;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .preview-card img { 
+            width: 100%; 
+            display: block;
+            opacity: 0.8;
+        }
+
+        .instruction-box {
+            background: #393939;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            text-align: left;
+            border-left: 4px solid var(--ibm-purple);
+        }
+
+        .instruction-box p { font-size: 0.85rem; margin: 0; color: var(--text-02); line-height: 1.4; }
+
+        .btn {
+            background: var(--ibm-blue);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-family: inherit;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.2s ease;
+            margin-bottom: 10px;
+        }
+
+        .btn:hover { background: #0353e9; transform: translateY(-1px); }
+        .btn:active { transform: translateY(0); }
+
+        .btn-secondary {
+            background: transparent;
+            border: 1px solid #525252;
+        }
+
+        .btn-secondary:hover { background: #454545; }
+
+        .success-msg {
+            color: #42be65;
+            font-size: 0.8rem;
+            margin-top: 10px;
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <div class="gradient-text">BIENVENIDO AL FUTURO</div>
-        <h1>AI FORUM 2026</h1>
-        <img src="https://front-aiforum.26t9w5z134g6.us-south.codeengine.appdomain.cloud/ai-forum-horizontal.jpeg">
-        <p>Tu experiencia personalizada se está sincronizando...</p>
-        <div class="loader"></div>
+
+    <div class="container">
+        <div class="eyebrow">Digital Asset Ready</div>
+        <h1>AI Forum 2026</h1>
+
+        <div class="preview-card">
+            <img src="https://front-aiforum.26t9w5z134g6.us-south.codeengine.appdomain.cloud/ai-forum-horizontal.jpeg" alt="Banner Preview">
+        </div>
+
+        <div class="instruction-box">
+            <p><strong>Paso 1:</strong> Copia el mensaje sugerido.<br>
+               <strong>Paso 2:</strong> Pégalo en LinkedIn al abrirse la ventana.</p>
+        </div>
+
+        <button id="copyBtn" class="btn" onclick="copyText()">
+            <span id="btnIcon">📋</span> <span id="btnText">Copiar Mensaje</span>
+        </button>
+
+        <button class="btn btn-secondary" onclick="shareOnLinkedIn()">
+            Ir a LinkedIn ↗
+        </button>
+
+        <div id="successMsg" class="success-msg">✔ ¡Texto copiado al portapapeles!</div>
     </div>
+
     <script>
-        // Redirección larga para que no moleste durante el evento
-        setTimeout(() => { window.location.href = "https://front-aiforum.26t9w5z134g6.us-south.codeengine.appdomain.cloud"; }, 30000);
+        const shareText = "¡Increíble experiencia en el #AIForum2026! 🚀 Aprendiendo sobre el futuro de la IA y la innovación tecnológica. #IBMTech #Innovation";
+        const linkedInUrl = "https://www.linkedin.com/sharing/share-offsite/?url=https://aranzasue.github.io/social-share-test/";
+
+        function copyText() {
+            navigator.clipboard.writeText(shareText).then(() => {
+                const msg = document.getElementById('successMsg');
+                const btnText = document.getElementById('btnText');
+                const btnIcon = document.getElementById('btnIcon');
+                
+                msg.style.display = 'block';
+                btnText.innerText = "¡Mensaje Listo!";
+                btnIcon.innerText = "✅";
+
+                // Opcional: Abrir automáticamente después de 1.5 segundos
+                setTimeout(shareOnLinkedIn, 15000);
+            });
+        }
+
+        function shareOnLinkedIn() {
+            window.open(linkedInUrl, '_blank');
+        }
     </script>
 </body>
 </html>
